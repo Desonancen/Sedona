@@ -5,14 +5,11 @@ body {
     font-family: "PT Sans Narrow", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     color:#333333;
 
-    background-color: #f1f1f1ff;
-    background-image: url(../img/main-bg.jpg);
-    background-position: top center;
-    background-repeat: no-repeat;
+    background-color: #f2f2f2;
 }
 
 .visually-hidden {
@@ -31,5 +28,142 @@ a {
     background-color: #fff;
     width:1200px;
     margin:0 auto;
-    padding:0 10px;
+    padding:0;
 }
+
+.shadow {
+    box-shadow: 0 5px 15px 0 rgba(0,1,1,0.2);
+}
+
+.main-navigation {
+    font-size:14px;
+    line-height: 21px;
+    color:#000;
+}
+
+.site-navigation {
+    list-style:none;
+}
+
+.site-navigation a {
+    color:#000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color:#81b3d2;
+}
+
+.intro {
+    min-height: 510px;
+    background: url(../img/desktop-bg-triangle.png) 50% 100% no-repeat,
+    url(../img/text-sedona.png) 50% 50% no-repeat,
+    url(../img/desktop-bg-back.jpg) 0 20% no-repeat;
+    background-color: #5496db;
+    margin-bottom: 60px;
+}
+
+.intro-city {
+    color:#000;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.intro-heading  {
+    font-size: 21px;
+    line-height: 26px;
+    margin:0 auto 28px;
+}
+
+.intro-info {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.reasons {
+    margin-bottom: 50px;
+}
+
+.reasons-of-sedona, .more-reasons {
+    list-style:none;
+}
+
+.blue-reason {
+    color:#fff;
+    background-color: #81b3d2;
+}
+
+.reason-item {
+    width:400px;
+    height:255px;
+    text-align: center;
+    margin:0;
+}
+
+.reason {
+    padding-top:45px;
+    font-size: 21px;
+    line-height: 21px;
+    margin-top:0;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.reason-number {
+    display:block;
+    padding-bottom: 25px;
+}
+
+.booking {
+    text-align: center; 
+    height:290px;
+}
+
+.interested {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 0 30px 0 0;
+    padding-top: 55px;
+}
+
+.modal {
+    width:568px;
+    height:482px;
+}
+
+.search-hotels {
+padding:30px 0;
+   font-size: 21px;
+   line-height: 26px;
+    color:#fff;
+   text-align: center;
+    width:568px;
+    height: 86px;
+    background-color: #766357;
+}
+
+.button {
+color:#fff;
+background-color: #81b3d2;
+border:0;
+font-size: 21px;
+line-height: 26px;
+font-weight: 700;
+width:458px;
+height: 58px;
+text-transform: uppercase;
+}
+
+.search-form p, .search-form input {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+
