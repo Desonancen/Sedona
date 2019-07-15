@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sedona</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo" href="index.html"><img src="img/logo.png" alt="Sedona logothype"></a>
+            <ul class="site-navigation">
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="gallery.html">Фото и видео</a></li>
+                <li><a href="map.html">Карта штата</a></li>
+                <li><a href="hotels.html">Гостинницы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+            <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+        <section class="intro">
+                <ul class="promo">
+                        <li class="welcome"><img src="img/Welcome.png" alt="welcome"></li>
+                        <li class="gorgeus"><img src="img/gorgeus.png" alt="to the gorgeus"></li>
+                        <li class="sedona"><img src="img/Sedona.png" alt="Sedona"></li>
+                        <li class="sucks"><img src="img/sucks.png" alt="Because the Grand Kanyon sucks"></li>
+                    </ul>
+            <b class="intro-heading">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</b>
+            <p class="intro-info">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+    </section>
+        <section class="reasons">
+            <h2 class="visually-hidden">Преимущества</h2>
+         <ul class="reasons-of-sedona">
+             <li class="reason-item blue-reason">
+                 <h3 class="reason">Настоящий городок</h2>
+                 <p class="description">
+                    <span class="reason-number">- №1 -</span> 
+                    Седона - не атракцион для туристов, там течет своя жизнь
+                 </p>
+             </li>
+             <li class="reason-photo-one"><img src="img/reason-1.jpg" alt=""></li>
+             <li>
+                 <ul class="more-reasons">
+                        <li class="reason-item">
+                                <img src="img/icon-1.svg" alt="house">
+                                <h3 class="reason">Жилье</h3>
+                                <p class="description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                            </li>
+                            <li class="reason-item">
+                                    <img src="img/icon-2.svg" alt="food">
+                                       <h3 class="reason">Еда</h3>
+                                       <p class="description">Всегда заказывайте фирменный бургер. Вы не разочаруетесь!</p>
+                                </li>
+                                <li class="reason-item">
+                                        <img src="img/icon-3.svg" alt="souvenir">
+                                           <h3 class="reason">Сувениры</h3>
+                                           <p class="description">Не только китайского, но и местного производства!</p>
+                                    </li>
+                 </ul>
+             </li>
+             <li class="reason-photo-two"><img src="img/reason-2.jpg" alt=""></li>
+             <li class="reason-item blue-reason">
+                    <h3 class="reason">Там есть мост Дьявола</h3>
+                    <span class="reason-number">- №2 -</span> 
+                    <p class="description">Да, по нему можно пройти, если конечно вы осмелитесь</p>
+             </li>
+             <li class="reason-item">
+                    <h3 class="reason">Небольшая площадь</h3>
+                    <span class="reason-number">- №3 -</span> 
+                    <p class="description">Все достопримечательности находятся очень близко</p>
+             </li>
+             <li class="reason-item">
+                    <h3 class="reason">Красивая дорога</h3>
+                    <span class="reason-number">- №4 -</span> 
+                    <p class="description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+             </li>
+             <li class="reason-item">
+                    <h3 class="reason">Мало туристов</h3>
+                    <span class="reason-number">- №5 -</span> 
+                    <p class="description">Большинство едет в Гранд Каньон и толпится там</p>
+             </li>
+         </ul>
+        </section>
+        <section class="booking">
+            <h2 class="intersted">Заинтересовались?</h2>
+            <p class="description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <img src="img/map.jpg" alt="map">
+        </section>
+        <section class="modal modal-search">
+            <a href=#><h2 class="search-hotels">Поиск гостинницы в Седоне</h2></a>
+            <form action="action.php" class="search-form" method="POST">
+                <p><label for="date-from">Дата заезда:</label>
+                <input type="text" id="date-from" name="date-from" placeholder="24 апреля 2017"><img src="img/calendar.svg" alt="calendar"></p>
+                <p><label for="date-to">Дата выезда:</label>
+                <input type="text" id="date-to" name="date-to" placeholder="4 июля 2017"><img src="img/calendar.svg" alt="calendar"></p>
+                <p>
+                <label for="adults">Взрослые:
+                <select name="adults" id="adults" class="dropdown">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </label>
+               <label for="kids">Дети:
+                   <select name="kids" id="kids" class="dropdown">
+                       <option value="1">1</option>
+                       <option value="2">2</option>
+                       <option value="3">3</option>
+                       <option value="4">4</option>
+                   </select>
+               </label>
+            </p>
+                <button type="submit" class="button">Найти</button>
+            </form>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+      <span class="tag">#VisitSedona</span>
+      <ul class="social">
+          <li><a href="#" class="social-buttons">Twitter</a> <img src="img/twitter.svg" alt="Twitter"></li>
+          <li><a href="#" class="social-buttons">Facebook</a><img src="img/fb-icon.svg" alt="Facebook"></li>
+          <li><a href="#" class="social-buttons">Youtube</a><img src="img/youtube.svg" alt="Youtube"></li>
+      </ul>
+      <p class="footer-copyright">Website by <a href="#"><img src="img/dev-logo.jpg" alt="My logo" width="50px" height="50px"></a></p>
+    </div>
+    </footer>
+</body>
+
+</html>
