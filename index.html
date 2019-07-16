@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,13 +14,15 @@
     <div class="container shadow">
         <header class="main-header">
             <nav class="main-navigation">
-                <a class="main-header-logo" href="index.html"><img src="img/logo.png" alt="Sedona logothype"></a>
+             <div class="main-navigation-wrapper">
                 <ul class="site-navigation">
-                    <li><a href="info.html">Информация</a></li>
-                    <li><a href="gallery.html">Фото и видео</a></li>
-                    <li><a href="map.html">Карта штата</a></li>
-                    <li><a href="hotels.html">Гостинницы</a></li>
+                    <li class="function active"><a href="info.html">Информация</a></li>
+                    <li class="function"><a href="gallery.html">Фото и видео</a></li>
+                    <li> <a class="main-header-logo" href="index.html"><img src="img/logo.png" alt="Sedona logothype"></a></li>
+                    <li class="function"><a href="map.html">Карта штата</a></li>
+                    <li class="function"><a href="hotels.html">Гостинницы</a></li>
                 </ul>
+            </div>
             </nav>
         </header>
         <main>
@@ -41,7 +42,7 @@
                                 Седона - не атракцион для туристов, там <br>течет своя жизнь
                             </p>
                     </li>
-                    <li class="reason-photo-one"><img src="img/reason-1.jpg" alt=""></li>
+                    <li class="reason-photo"><img src="img/reason-1.jpg" alt=""></li>
                     <li>
                         <ul class="more-reasons">
                             <li class="reason-item">
@@ -61,12 +62,13 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="reason-photo-two"><img src="img/reason-2.jpg" alt=""></li>
+                    <li class="reason-photo"><img src="img/reason-2.jpg" alt=""></li>
                     <li class="reason-item blue-reason">
                         <h3 class="reason">Там есть мост Дьявола</h3>
                         <p class="description"><span class="reason-number">— №2 —</span>
                             Да, по нему можно пройти, если конечно<br> вы осмелитесь</p>
                     </li>
+                    <div class="grey-wrap">
                     <li class="reason-item">
                         <h3 class="reason">Небольшая площадь</h3>
                         <p class="description">
@@ -86,18 +88,17 @@
                                 <span class="reason-number">— №5 —</span>
                             Большинство едет в Гранд Каньон и <br> толпится там</p>
                     </li>
+                </div>
                 </ul>
             </section>
             <section class="booking">
                 <h2 class="interested">Заинтересовались?</h2>
                 <p class="description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц
                     в Седоне</p>
+                            <button type="button" class="search-hotels">Поиск гостинницы в Седоне</button>
             </section>
             <img src="img/map.jpg" alt="map">
             <section class="modal modal-search">
-                <a href=#>
-                    <h2 class="search-hotels">Поиск гостинницы в Седоне</h2>
-                </a>
                 <form action="action.php" class="search-form" method="POST">
                     <p><label for="date-from">Дата заезда:</label>
                         <input type="text" id="date-from" name="date-from" placeholder="24 апреля 2017"><img
@@ -131,9 +132,9 @@
             <div class="container">
                 <span class="tag">#VisitSedona</span>
                 <ul class="social">
-                    <li><a href="#" class="social-buttons">Twitter</a> <img src="img/twitter.svg" alt="Twitter"></li>
-                    <li><a href="#" class="social-buttons">Facebook</a><img src="img/fb-icon.svg" alt="Facebook"></li>
-                    <li><a href="#" class="social-buttons">Youtube</a><img src="img/youtube.svg" alt="Youtube"></li>
+                    <li><a href="#" class="social-buttons visually-hidden">Twitter</a> <img src="img/twitter.svg" alt="Twitter"></li>
+                    <li><a href="#" class="social-buttons visually-hidden">Facebook</a><img src="img/fb-icon.svg" alt="Facebook"></li>
+                    <li><a href="#" class="social-buttons visually-hidden">Youtube</a><img src="img/youtube.svg" alt="Youtube"></li>
                 </ul>
                 <p class="footer-copyright">Website by <a href="#"><img src="img/dev-logo.jpg" alt="My logo"
                             width="50px" height="50px"></a></p>
