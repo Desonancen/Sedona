@@ -98,32 +98,30 @@
                             <button type="button" class="search-hotels">Поиск гостинницы в Седоне</button>
             </section>
             <div class="map">
-            <section class="modal modal-search">
+            <section class="modal-search">
                 <form action="action.php" class="search-form" method="POST">
-                    <p class="fields"><label for="date-from">Дата заезда:</label>
-                        <input type="text" id="date-from" name="date-from" placeholder="24 апреля 2017">
-                        <span class="fields-after"></span></p>
-                    <p class="fields"><label for="date-to">Дата выезда:</label>
-                        <input type="text" id="date-to" name="date-to" placeholder="4 июля 2017"><span class="fields-after"></span></p>
-                    <p class="search-wrapper">
-                        <label for="adults">Взрослые:
+                    <div class="fields"><label for="date-from">Дата заезда:</label>
+                        <input type="text" id="date-from" name="date-from" placeholder="24 апреля 2017" required>
+                        <span class="fields-after"></span></div>
+                    <div class="fields"><label for="date-to">Дата выезда:</label>
+                        <input type="text" id="date-to" name="date-to" placeholder="4 июля 2017" required><span class="fields-after"></span></div>
+                    <div class="search-wrapper">
+                        <label for="adults">Взрослые:</label>
                             <div class="adult">
-                            <button type="button" class="btn-minus">-</button>
+                            <button type="button" class="btn">-</button>
                             <input type="text" name="adults" id="adults"
                             value="2">
-                            <button type="button" class="btn-plus">+</button> 
-                        </div>
-                        </label>
-                    </p>
-                    <p class="search-wrapper">
-                        <label for="kids">Дети:
+                            <button type="button" class="btn">+</button> 
+                        </div>   
+                    </div>
+                    <div class="search-wrapper">
+                        <label for="kids">Дети: </label>
                             <div class="kids">
-                                    <button type="button" class="btn-minus">-</button>
-                            <input type="text" name="kids">
-                            <button type="button" class="btn-plus">+</button> 
+                                    <button type="button" class="btn">-</button>
+                            <input type="text" name="kids" id="kids" value="1">
+                            <button type="button" class="btn">+</button> 
+                            </div>
                         </div>
-                        </label>
-                    </p>
                     <button type="submit" class="button">Найти</button>
                 </form>
             </section>
