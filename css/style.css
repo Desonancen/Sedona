@@ -279,12 +279,13 @@ margin:15px;
     height:390px;
     box-sizing: border-box;
     padding:55px;
-
+ 
     text-align: center;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
 
+    box-shadow:0 7px 15px 0 rgba(0,1,1,0.2);
     background-color: #fff;
 }
 
