@@ -81,10 +81,6 @@ a {
     font-weight: 400;
 }
 
-.reasons {
-    margin-bottom: 50px;
-}
-
 .blue-reason {
     color:#fff;
     background-color: #81b3d2;
@@ -121,7 +117,7 @@ a {
 
 .booking {
     text-align: center; 
-    height:290px;
+    min-height:290px;
 }
 
 .interested {
@@ -167,6 +163,7 @@ font-weight: 700;
 width:458px;
 height: 58px;
 text-transform: uppercase;
+margin:55px 0;
 }
 
 .button:hover,
@@ -174,10 +171,10 @@ text-transform: uppercase;
     background-color:#669ec0;
 }
 
-.search-form p, .search-form input {
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 700;
+.map {
+    background: #cacaca url(../img/map.jpg) no-repeat;
+    min-height:474px;
+    position: relative;
 }
 
 .tag {
@@ -273,4 +270,72 @@ margin:15px;
     display:flex;
     flex-direction: column;
    align-items:center;
+}
+
+.modal {
+    position: relative;
+}
+
+.modal-search {
+    position: absolute;
+    left:316px;
+    width:568px;
+    height:390px;
+    box-sizing: border-box;
+    padding:55px;
+
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+
+    background-color: #fff;
+}
+
+.fields {
+    position: relative;
+    margin-bottom: 30px;
+    text-align:right;
+}
+
+.modal-search label {
+    line-height: 38px;
+    float:left;
+}
+
+.search-form input {
+    padding:6px 0;
+    box-sizing: border-box;
+    background-color: #f2f2f2;    
+    line-height: 26px;
+    border:0;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.search-form input[name="date-to"],
+.search-form input[name="date-from"] {
+    padding-left:12px;
+    width:345px;
+}
+
+.fields-after {
+    position: absolute;
+    top:9px;
+    right:10px;
+    opacity:0.3;
+    width:21px;
+    height:22px;
+    background-color:transparent;
+    background-image: url(../img/calendar.svg);
+}
+
+.fields-after:hover {
+    opacity:1;
+}
+
+.search-wrapper {
+    float:left;
+    box-sizing: border-box;
+    width: 50%;
 }
