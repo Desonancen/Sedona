@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,15 +15,16 @@
     <div class="container shadow">
         <header class="main-header">
             <nav class="main-navigation">
-             <div class="main-navigation-wrapper">
-                <ul class="site-navigation">
-                    <li class="function active"><a href="info.html">Информация</a></li>
-                    <li class="function"><a href="gallery.html">Фото и видео</a></li>
-                    <li> <a class="main-header-logo" href="index.html"><img src="img/logo.png" alt="Sedona logothype"></a></li>
-                    <li class="function"><a href="map.html">Карта штата</a></li>
-                    <li class="function"><a href="hotels.html">Гостинницы</a></li>
-                </ul>
-            </div>
+                <div class="main-navigation-wrapper">
+                    <ul class="site-navigation">
+                        <li class="function active"><a href="info.html">Информация</a></li>
+                        <li class="function"><a href="gallery.html">Фото и видео</a></li>
+                        <li> <a class="main-header-logo" href="index.html"><img src="img/logo.png"
+                                    alt="Sedona logothype"></a></li>
+                        <li class="function"><a href="map.html">Карта штата</a></li>
+                        <li class="function"><a href="hotels.html">Гостинницы</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <main>
@@ -69,77 +71,86 @@
                             Да, по нему можно пройти, если конечно<br> вы осмелитесь</p>
                     </li>
                     <div class="grey-wrap">
-                    <li class="reason-item">
-                        <h3 class="reason">Небольшая площадь</h3>
-                        <p class="description">
+                        <li class="reason-item">
+                            <h3 class="reason">Небольшая площадь</h3>
+                            <p class="description">
                                 <span class="reason-number">— №3 —</span>
                                 Все достопримечательности<br> находятся очень близко</p>
-                    </li>
-                    <li class="reason-item">
-                        <h3 class="reason">Красивая дорога</h3>
-                        <p class="description">
+                        </li>
+                        <li class="reason-item">
+                            <h3 class="reason">Красивая дорога</h3>
+                            <p class="description">
                                 <span class="reason-number">— №4 —</span>
-                            Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
-                    </li>
-                    <li class="reason-item">
-                        <h3 class="reason">Мало туристов</h3>
+                                Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
+                        </li>
+                        <li class="reason-item">
+                            <h3 class="reason">Мало туристов</h3>
 
-                        <p class="description">
+                            <p class="description">
                                 <span class="reason-number">— №5 —</span>
-                            Большинство едет в Гранд Каньон и <br> толпится там</p>
-                    </li>
-                </div>
+                                Большинство едет в Гранд Каньон и <br> толпится там</p>
+                        </li>
+                    </div>
                 </ul>
             </section>
             <section class="booking">
                 <h2 class="interested">Заинтересовались?</h2>
-                <p class="description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц
+                <p class="description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
+                    гостинниц
                     в Седоне</p>
-                            <button type="button" class="search-hotels">Поиск гостинницы в Седоне</button>
+                <button type="button" class="search-hotels">Поиск гостинницы в Седоне</button>
             </section>
             <div class="map">
-            <section class="modal-search">
-                <form action="action.php" class="search-form" method="POST">
-                    <div class="fields"><label for="date-from">Дата заезда:</label>
-                        <input type="text" id="date-from" name="date-from" placeholder="24 апреля 2017" required>
-                        <span class="fields-after"></span></div>
-                    <div class="fields"><label for="date-to">Дата выезда:</label>
-                        <input type="text" id="date-to" name="date-to" placeholder="4 июля 2017" required><span class="fields-after"></span></div>
-                    <div class="search-wrapper">
-                        <label for="adults">Взрослые:</label>
+                <section class="modal-search">
+                    <form action="action.php" class="search-form" method="POST">
+                        <div class="fields"><label for="date-from">Дата заезда:</label>
+                            <input type="text" id="date-from" name="date-from" placeholder="24 апреля 2017" >
+                            <span class="fields-after"></span></div>
+                        <div class="fields"><label for="date-to">Дата выезда:</label>
+                            <input type="text" id="date-to" name="date-to" placeholder="4 июля 2017"><span
+                                class="fields-after"></span></div>
+                        <div class="search-wrapper">
+                            <label for="adults">Взрослые:</label>
                             <div class="adult">
-                            <button type="button" class="btn">-</button>
-                            <input type="text" name="adults" id="adults"
-                            value="2">
-                            <button type="button" class="btn">+</button> 
-                        </div>   
-                    </div>
-                    <div class="search-wrapper">
-                        <label for="kids">Дети: </label>
-                            <div class="kids">
-                                    <button type="button" class="btn">-</button>
-                            <input type="text" name="kids" id="kids" value="1">
-                            <button type="button" class="btn">+</button> 
+                                <button type="button" class="btn">-<span
+                                        class="visually-hidden">Уменшить</span></button>
+                                <input type="text" name="adults" id="adults" value="2">
+                                <button type="button" class="btn">+<span
+                                        class="visually-hidden">Увеличить</span></button>
                             </div>
                         </div>
-                    <button type="submit" class="button">Найти</button>
-                </form>
-            </section>
-        </div>
+                        <div class="search-wrapper">
+                            <label for="kids">Дети: </label>
+                            <div class="kids">
+                                <button type="button" class="btn">-<span
+                                        class="visually-hidden">Уменшить</span></button>
+                                <input type="text" name="kids" id="kids" value="1">
+                                <button type="button" class="btn">+<span
+                                        class="visually-hidden">Увеличить</span></button>
+                            </div>
+                        </div>
+                        <button type="submit" class="button">Найти</button>
+                    </form>
+                </section>
+            </div>
         </main>
         <footer class="main-footer">
             <div class="container">
                 <span class="tag">#VisitSedona</span>
                 <ul class="social">
-                    <li><a href="#" class="social-buttons visually-hidden">Twitter</a> <img src="img/twitter.svg" alt="Twitter"></li>
-                    <li><a href="#" class="social-buttons visually-hidden">Facebook</a><img src="img/fb-icon.svg" alt="Facebook"></li>
-                    <li><a href="#" class="social-buttons visually-hidden">Youtube</a><img src="img/youtube.svg" alt="Youtube"></li>
+                    <li><a href="#" class="social-buttons visually-hidden">Twitter</a> <img src="img/twitter.svg"
+                            alt="Twitter"></li>
+                    <li><a href="#" class="social-buttons visually-hidden">Facebook</a><img src="img/fb-icon.svg"
+                            alt="Facebook"></li>
+                    <li><a href="#" class="social-buttons visually-hidden">Youtube</a><img src="img/youtube.svg"
+                            alt="Youtube"></li>
                 </ul>
                 <p class="footer-copyright">Website by <a href="#"><img src="img/dev-logo.jpg" alt="My logo"
                             width="50px" height="50px"></a></p>
             </div>
         </footer>
     </div>
+    <script src="js/popup.js"></script>
 </body>
 
 </html>
